@@ -6,4 +6,5 @@ describe('stringCalculator', () => {
     expect(stringCalculator('')).toBe(0);
   });
 
+  
 });
