@@ -10,4 +10,7 @@ describe('stringCalculator', () => {
     expect(stringCalculator('5')).toBe(5);
   });
 
+  test('returns the sum for comma-separated numbers', () => {
+    expect(stringCalculator('1,2,3')).toBe(6);
+  });
 });
