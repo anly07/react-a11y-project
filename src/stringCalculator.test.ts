@@ -6,5 +6,8 @@ describe('stringCalculator', () => {
     expect(stringCalculator('')).toBe(0);
   });
 
-  
+  test('returns the number for a single number', () => {
+    expect(stringCalculator('5')).toBe(5);
+  });
+
 });
