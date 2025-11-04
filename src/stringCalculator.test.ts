@@ -17,4 +17,12 @@ describe('stringCalculator', () => {
   test('handles newline as separator', () => {
     expect(stringCalculator('1\n2,3')).toBe(6);
   });
+
+  test('throws for negative numbers', () => {
+    expect(() => stringCalculator('1,-2')).toThrow('Negatives not allowed');
+  });
+
+  test('throws for invalid input', () => {
+    expect(() => stringCalculator('1,a')).toThrow('"a" is not a valid number');
+  });
 });
