@@ -13,4 +13,8 @@ describe('stringCalculator', () => {
   test('returns the sum for comma-separated numbers', () => {
     expect(stringCalculator('1,2,3')).toBe(6);
   });
+
+  test('handles newline as separator', () => {
+    expect(stringCalculator('1\n2,3')).toBe(6);
+  });
 });
