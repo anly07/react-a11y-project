@@ -1,0 +1,39 @@
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 8px;
+  top: 8px;
+  width: auto;
+  height: auto;
+  padding: 8px 12px;
+  background: black;
+  color: white;
+  z-index: 1000;
+  border-radius: 4px;
+}
+button {
+  padding: 8px 12px;
+  margin-top: 8px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background: #eee;
+  cursor: pointer;
+}
+button:focus {
+  outline: 3px solid Highlight;
+  outline-offset: 2px;
+}
+input:focus {
+  outline: 3px solid Highlight;
+  outline-offset: 2px;
+}
+.result p {
+  color: green;
+  font-weight: 600;
+}

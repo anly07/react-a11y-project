@@ -122,7 +122,7 @@ const App = () => {
               textAlign: 'center',
             }}
           >
-            ⚠ {error}
+            ⚠️ {error}
           </p>
         )}
 
@@ -147,4 +147,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App;
